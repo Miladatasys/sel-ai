@@ -8,7 +8,6 @@ public class Form {
     private static WebDriver driver;
     @Before
     public void setup(){
-        //Start chrome web browser
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         System.setProperty("webdriver.chrome.driver", "C:\\Projects\\Sel-ia\\src\\drivers\\chromedriver.exe");

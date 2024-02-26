@@ -9,7 +9,6 @@ public class Golf {
     private static WebDriver driver;
     @Before
     public void setup(){
-        //Start Chrome web browser
         ChromeOptions options = new ChromeOptions();
         System.setProperty("webdriver.chrome.driver", "C:\\Projects\\Sel-ia\\src\\drivers\\chromedriver.exe");
         options.addArguments("--remote-allow-origins=*");
@@ -30,7 +29,6 @@ public class Golf {
     }
     @After
     public void teardown(){
-        //Close browser
         driver.quit();
     }
 }

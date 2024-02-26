@@ -7,7 +7,6 @@ import org.openqa.selenium.support.ui.Select;
 public class Booking {
     WebDriver driver;
 
-    //Constructor that will be automatically called as soon as the object of the class is created
     public Booking(WebDriver driver) {
         this.driver=driver;
     }
@@ -41,13 +40,13 @@ public class Booking {
             throw new RuntimeException(e);
         }
         driver.findElement(BookedBy).clear();
-        driver.findElement(BookedBy).sendKeys("Low John");
+        driver.findElement(BookedBy).sendKeys("Equipo QA");
         driver.findElement(Email).clear();
-        driver.findElement(Email).sendKeys("low.john@admlucid.com");
+        driver.findElement(Email).sendKeys("equipo.qa@admlucid.com");
         driver.findElement(Phone).clear();
         driver.findElement(Phone).sendKeys("18004033779");
         //driver.findElement(calendar2).click();
-        driver.findElement(calendar).sendKeys("2023"+ Keys.ARROW_RIGHT+"0720");
+        driver.findElement(calendar).sendKeys("2024"+ Keys.ARROW_RIGHT+"0720");
         driver.findElement(StartTime).clear();
         driver.findElement(StartTime).sendKeys("09:30AM");
 
