@@ -12,7 +12,6 @@ public class Form {
         options.addArguments("--remote-allow-origins=*");
         System.setProperty("webdriver.chrome.driver", "C:\\Projects\\Sel-ia\\src\\drivers\\chromedriver.exe");
         driver = new ChromeDriver(options);
-        //Maximize browser window
         driver.manage().window().maximize();
     }
     @Test

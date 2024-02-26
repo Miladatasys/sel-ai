@@ -14,7 +14,6 @@ public class Booking {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
-        //Maximize browser window
         driver.manage().window().maximize();
         driver.get("https://www.admlucid.com/Golf");
     }
